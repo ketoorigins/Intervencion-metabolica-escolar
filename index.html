@@ -226,7 +226,7 @@
                         </div>
                     )}
 
-                    {/* Header */}
+                    {}
                     <header className="pt-16 pb-12 flex flex-col items-center">
                         <img src="https://i.ibb.co/7tjkYW1m/Dise-o-sin-t-tulo.png" className="h-40 sm:h-56 md:h-64 mb-8 drop-shadow-[0_0_25px_rgba(255,0,127,0.5)] transition-all duration-700 hover:scale-105" alt="Logo Keto Origins" />
                         {view === 'home' ? (
@@ -261,6 +261,7 @@
                                 <div className="w-16 h-[2px] bg-magenta-500 mr-6 font-league"></div>Elige tu Masterclass Técnica
                             </h3>
 
+                            {}
                             <div className="grid gap-8 mb-24 font-league">
                                 {MASTERCLASSES_BASE.map((mc) => {
                                     const session = getNextAvailableSession(mc.id);
@@ -337,7 +338,7 @@
                         </main>
                     )}
 
-                    {/* Vista Detalle */}
+                    {}
                     {view === 'detail' && selectedClass && (
                         <main className="px-6 pb-32 max-w-4xl mx-auto animate-in slide-in-from-right-10 duration-700 font-league">
                             <div className={`inline-flex p-6 rounded-[2rem] bg-gradient-to-br ${selectedClass.color} mb-10 shadow-3xl drop-shadow-[0_0_15px_rgba(255,0,127,0.4)] font-league`}>{selectedClass.icon}</div>
@@ -375,7 +376,7 @@
                                             <div key={i} className={`aspect-square w-8 sm:w-10 rounded-full flex items-center justify-center text-[8px] font-black transition-all duration-1000 mx-auto ${i < (activeSession?.taken || 0) ? 'bg-gradient-to-br from-magenta-500 to-fuchsia-600 text-white shadow-[0_0_8px_rgba(255,0,127,0.4)] scale-105' : 'bg-white/5 border border-white/10 text-white/10 scale-90'} font-league`}>{i + 1}</div>
                                         ))}
                                     </div>
-                                    {}
+                                    {/* Formulario */}
                                     <div className="p-[1px] rounded-[3.5rem] bg-gradient-to-br from-magenta-500 via-indigo-500 to-cyan-500 shadow-3xl overflow-hidden font-league">
                                         <div className="bg-[#1a0b2e] p-10 rounded-[calc(3.5rem-1px)] relative overflow-hidden text-center font-league">
                                             <h3 className="text-2xl font-black text-white mb-10 uppercase tracking-widest font-league">Inscripción al Aula Digital</h3>
@@ -404,7 +405,7 @@
                         </main>
                     )}
 
-                    {/* Vista Éxito (Radar Activo) */}
+                    {}
                     {view === 'success' && (
                         <main className="px-6 py-40 flex flex-col items-center text-center animate-in zoom-in duration-700 font-league">
                             <div className="w-32 h-32 bg-cyan-500/20 rounded-full flex items-center justify-center mb-12 border border-cyan-500/50 shadow-2xl font-league"><CheckCircle className="w-16 h-16 text-cyan-400 font-league" /></div>
